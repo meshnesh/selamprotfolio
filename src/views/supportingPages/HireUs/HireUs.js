@@ -2,11 +2,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { useTheme } from '@mui/material/styles';
 import Box from '@mui/material/Box';
-import Divider from '@mui/material/Divider';
 import Container from 'common/Container';
-import { Headline, Form, Partners } from './components';
+import { Headline, Form } from './components';
 
-const HireUs = ({ themeMode = 'light' }) => {
+const HireUs = () => {
   const theme = useTheme();
 
   return (
@@ -25,10 +24,6 @@ const HireUs = ({ themeMode = 'light' }) => {
         <Form />
       </Container>
       <Container>
-        <Divider />
-      </Container>
-      <Container paddingTop={'0 !important'}>
-        <Partners themeMode={themeMode} />
       </Container>
     </Box>
   );

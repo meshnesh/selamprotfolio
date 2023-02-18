@@ -9,12 +9,12 @@ const Numbers = () => {
       <Grid container spacing={2}>
         {[
           {
-            title: 12,
-            subtitle: '12 years in business.',
+            title: 25,
+            subtitle: 'Over 25 years in combined expirience.',
           },
           {
-            title: '5,2K',
-            subtitle: '5.200 sold copies',
+            title: '500',
+            subtitle: '500 completed customer projects',
           },
           {
             title: '99%',

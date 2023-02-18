@@ -1,12 +1,12 @@
 import React from 'react';
-import { useTheme } from '@mui/material/styles';
+// import { useTheme } from '@mui/material/styles';
 import Box from '@mui/material/Box';
-import Button from '@mui/material/Button';
+// import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import TeamWorkingIllustration from 'svg/illustrations/TeamWorking';
 
 const Story = () => {
-  const theme = useTheme();
+  // const theme = useTheme();
   return (
     <Box>
       <Box marginBottom={4}>
@@ -44,7 +44,7 @@ const Story = () => {
           problems and digital marketing strategies that connect you with the
           ideal client and help create a loyal customer.
         </Typography>
-        <Box marginTop={3} display={'flex'} justifyContent={'center'}>
+        {/* <Box marginTop={3} display={'flex'} justifyContent={'center'}>
           <Box
             component={Button}
             variant="contained"
@@ -70,7 +70,7 @@ const Story = () => {
           >
             Contact us
           </Box>
-        </Box>
+        </Box> */}
       </Box>
       <Box
         display={'flex'}
@@ -82,7 +82,7 @@ const Story = () => {
           <TeamWorkingIllustration height={'100%'} width={'100%'} />
         </Box>
       </Box>
-      <Box>
+      {/* <Box>
         <Typography
           sx={{
             textTransform: 'uppercase',
@@ -120,7 +120,7 @@ const Story = () => {
             </Box>
           ))}
         </Box>
-      </Box>
+      </Box> */}
     </Box>
   );
 };

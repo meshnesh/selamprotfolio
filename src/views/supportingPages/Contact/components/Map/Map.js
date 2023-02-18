@@ -47,7 +47,7 @@ const Map = ({ themeMode = 'light' }) => {
           marginHeight="0"
           marginWidth="0"
           scrolling="no"
-          src="https://maps.google.com/maps?width=100%&height=100%&hl=en&q=Milan&ie=UTF8&t=&z=14&iwloc=B&output=embed"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.8571034849574!2d36.801351515403745!3d-1.2577098990826554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f1712cb04fc53%3A0x7866f8725d20265f!2sMwanzi%20Rd%2C%20Nairobi%2C%20Kenya!5e0!3m2!1sen!2sus!4v1676727755037!5m2!1sen!2sus"
           sx={{
             filter:
               themeMode === 'dark' ? 'grayscale(0.5) opacity(0.7)' : 'none',
@@ -63,7 +63,7 @@ const Map = ({ themeMode = 'light' }) => {
           >
             Call us:
           </Typography>
-          <Typography variant={'subtitle1'}>+39 34 111 222</Typography>
+          <Typography variant={'subtitle1'}>+254 722 002 222</Typography>
         </Grid>
         <Grid item xs={12} sm={6}>
           <Typography
@@ -73,7 +73,7 @@ const Map = ({ themeMode = 'light' }) => {
           >
             Email us:
           </Typography>
-          <Typography variant={'subtitle1'}>hi@maccarianagency.com</Typography>
+          <Typography variant={'subtitle1'}>hi@mwtechnologies.ke</Typography>
         </Grid>
         <Grid item xs={12}>
           <Typography
@@ -84,7 +84,7 @@ const Map = ({ themeMode = 'light' }) => {
             Address:
           </Typography>
           <Typography variant={'subtitle1'}>
-            Via E. Gola 4, Milan MI, Italy
+            Mwanzi Road, Westlands Kenya
           </Typography>
         </Grid>
       </Grid>

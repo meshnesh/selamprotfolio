@@ -1,8 +1,8 @@
 {
-  "name": "webbee-js--react-scripts",
-  "author": "maccarian",
-  "email": "hi@maccarianagency.com",
-  "version": "2.0.0",
+  "name": "mw-technologies-test",
+  "author": "munene",
+  "email": "mr.antony.munene@gmail.com",
+  "version": "0.0.1",
   "private": true,
   "scripts": {
     "start": "react-scripts start",

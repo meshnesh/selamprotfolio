@@ -1,6 +1,6 @@
-# [Webbee - Multipurpose Template + UI Kit](https://webbee.maccarianagency.com/)
+# [M&W Technologies powered by Webbee](https://react-test-0vu1.onrender.com)
 
-Material-UI & ReactJS based Landing Pages Kit made with [Material UI's](https://material-ui.com/?ref=maccarian-agency) components, [React](https://reactjs.org/?ref=maccarian-agency).
+Material-UI & ReactJS made with [Material UI's](https://material-ui.com/?ref=maccarian-agency) components, [React](https://reactjs.org/?ref=maccarian-agency).
 
 A professional React Kit that comes with plenty of ready-to-use Material-UI components that will help you to build faster & beautiful fontend pages. Each component is fully customizable, responsive and easy to integrate.
 
@@ -27,8 +27,7 @@ Webbee landing page examples can be used out of the box, but since they’re bui
 
 ## Learn more
 
-- [Launch a live demo](https://webbee.maccarianagency.com)
-- [Documentation & Quick Start](https://webbee.maccarianagency.com/docs-introduction)
+- [Launch a live demo](https://react-test-0vu1.onrender.com)
 
 ## Quick start
 
@@ -39,16 +38,3 @@ Webbee landing page examples can be used out of the box, but since they’re bui
 ## MUI Documentation
 
 The full documentation for the React Material Kit can be found [here](https://next.material-ui.com?ref=maccarian-agency).
-
-## Free Updates and Support
-
-No matter how well documented and built something is, sometimes you just need a little help! That’s why we make ourselves available to help you anytime, just contact our [support](hi@maccarianagency.com) email. We’re also planning tons of updates! In addition to keeping theFront up to date with Material UI's core and any necessary patches, we’ll be adding new features regularly over the coming months!
-
-- [Contact us via email](hi@maccarianagency.com)
-
-## Contact Us
-
-- Email Us: hi@maccarianagency.com
-- [Follow us on Linkedin](https://www.linkedin.com/company/maccarian)
-- [Follow us on Instagram](https://www.instagram.com/maccarian/)
-- [Follow us on Facebook](https://facebook.com/maccarian.agency/)

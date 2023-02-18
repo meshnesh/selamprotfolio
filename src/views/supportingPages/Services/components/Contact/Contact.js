@@ -26,6 +26,7 @@ const Contact = () => {
           variant="contained"
           color="primary"
           size="large"
+          href={'/page-contact'}
           endIcon={
             <svg
               width={16}
