@@ -5,7 +5,7 @@ import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import Card from '@mui/material/Card';
 import Avatar from '@mui/material/Avatar';
-import Button from '@mui/material/Button';
+// import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import TeamWorkingIllustration from 'svg/illustrations/TeamWorking';
 
@@ -47,7 +47,7 @@ const Features = () => {
           <br />
           An experience you'd expect from a design system.
         </Typography>
-        <Box marginTop={3} display={'flex'} justifyContent={'center'}>
+        {/* <Box marginTop={3} display={'flex'} justifyContent={'center'}>
           <Button
             component={'a'}
             href={'https://material-ui.com/store/items/webbee-landing-page/'}
@@ -75,7 +75,7 @@ const Features = () => {
           >
             Purchase now
           </Button>
-        </Box>
+        </Box> */}
       </Box>
       <Box
         display={'flex'}

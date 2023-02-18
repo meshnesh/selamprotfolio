@@ -1,7 +1,6 @@
 import React from 'react';
 import { alpha, useTheme } from '@mui/material/styles';
 import Box from '@mui/material/Box';
-import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
 import Card from '@mui/material/Card';
@@ -32,7 +31,7 @@ const WhatWeDo = () => {
           gutterBottom
           align={'center'}
         >
-          You do business we do the softwere
+          You do business we do the software
         </Box>
         <Typography
           variant={'h6'}
@@ -40,43 +39,15 @@ const WhatWeDo = () => {
           color={'textSecondary'}
           align={'center'}
         >
-          Since 2007, we have helped 25 companies launch over 1k incredible
-          products
+          With over 2.5 decades of combined experience, we offer the best advice on how to launch your products digitally
         </Typography>
-        <Box marginTop={3} display={'flex'} justifyContent={'center'}>
-          <Box
-            component={Button}
-            variant="contained"
-            color="primary"
-            size="large"
-            endIcon={
-              <svg
-                width={16}
-                height={16}
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M17 8l4 4m0 0l-4 4m4-4H3"
-                />
-              </svg>
-            }
-          >
-            Contact us
-          </Box>
-        </Box>
       </Box>
       <Grid container spacing={4}>
         {[
           {
-            title: 'Web Design',
+            title: 'Product Development',
             subtitle:
-              'We design and develop amazing, lightning fast, and high-converting websites that make your business grow.',
+              'We design and develop amazing, lightning fast, and high-converting web-based and mobile applications that make your business grow.',
             icon: (
               <svg
                 width={48}
@@ -99,7 +70,7 @@ const WhatWeDo = () => {
           {
             title: 'UI / UX Design',
             subtitle:
-              'We design intuitive web & mobile apps focused on driving user engagement and increasing users retention.',
+              'We design and intuitive web & mobile apps focused on driving user engagement and increasing users retention.',
             icon: (
               <svg
                 width={48}

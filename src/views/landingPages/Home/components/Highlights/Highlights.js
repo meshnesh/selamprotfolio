@@ -12,9 +12,9 @@ const Highlights = () => {
       <Grid container spacing={2}>
         {[
           {
-            title: 'Built for developers',
+            title: 'Digitize your Products',
             subtitle:
-              'Webbee is built to make your life easier. Variables, build tooling, documentation, and reusable components.',
+              'Digitising your business product is made easier. Variables, build tooling, documentation',
             icon: (
               <svg
                 height={24}
@@ -58,7 +58,7 @@ const Highlights = () => {
           {
             title: 'Documentation for everything',
             subtitle:
-              'We\'ve written extensive documentation for components and tools, so you never have to reverse engineer anything.',
+              'We\'ve written extensive documentation for components and products, so you never have to worry about anything.',
             icon: (
               <svg
                 height={24}

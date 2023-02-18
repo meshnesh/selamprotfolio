@@ -4,7 +4,7 @@ import { useTheme } from '@mui/material/styles';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
-import { Map, Form, Faq } from './components';
+import { Map, Form } from './components';
 import Container from 'common/Container';
 
 const Contact = ({ themeMode = 'light' }) => {
@@ -25,11 +25,6 @@ const Contact = ({ themeMode = 'light' }) => {
           </Grid>
         </Grid>
       </Container>
-      <Box bgcolor={theme.palette.alternate.main}>
-        <Container maxWidth={800}>
-          <Faq />
-        </Container>
-      </Box>
     </Box>
   );
 };

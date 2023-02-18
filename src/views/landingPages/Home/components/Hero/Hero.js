@@ -3,7 +3,6 @@ import React from 'react';
 import { useTheme } from '@mui/material/styles';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import Box from '@mui/material/Box';
-import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
 import RocketIllustration from 'svg/illustrations/Rocket';
@@ -45,44 +44,8 @@ const Hero = () => {
               color="textSecondary"
               sx={{ fontWeight: 400 }}
             >
-              Webbee will make your product look modern and professional while
-              saving you precious time.
+              We make building your product easy!
             </Typography>
-          </Box>
-          <Box
-            display="flex"
-            flexDirection={{ xs: 'column', sm: 'row' }}
-            alignItems={{ xs: 'stretched', sm: 'flex-start' }}
-          >
-            <Button
-              component={'a'}
-              variant="contained"
-              color="primary"
-              size="large"
-              fullWidth={isMd ? false : true}
-              href={
-                'https://material-ui.com/store/items/webbee-landing-page/'
-              }
-              target={'_blank'}
-            >
-              Purchase now
-            </Button>
-            <Box
-              marginTop={{ xs: 2, sm: 0 }}
-              marginLeft={{ sm: 2 }}
-              width={{ xs: '100%', md: 'auto' }}
-            >
-              <Button
-                component={'a'}
-                href={'/docs-introduction'}
-                variant="outlined"
-                color="primary"
-                size="large"
-                fullWidth={isMd ? false : true}
-              >
-                View documentation
-              </Button>
-            </Box>
           </Box>
         </Box>
       </Grid>
