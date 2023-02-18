@@ -25,21 +25,20 @@ const Footer = () => {
         gutterBottom
         align={'center'}
       >
-        Get started with Webbee today
+        Get started with M&W Technologies today
       </Box>
       <Typography
         variant={'h6'}
         component={'p'}
         color={'textSecondary'}
         align={'center'}
-      >
-        Build a beautiful, modern website with flexible, fully customizable,
-        atomic Material-UI components.
+      > 
+        Let's start by discussing your idea and lay out everything that needs to be done.
       </Typography>
       <Box marginTop={3} display={'flex'} justifyContent={'center'}>
         <Button
           component={'a'}
-          href={'https://material-ui.com/store/items/webbee-landing-page/'}
+          href={'/page-contact'}
           target={'_blank'}
           variant="contained"
           color="primary"
@@ -62,7 +61,7 @@ const Footer = () => {
             </svg>
           }
         >
-          Purchase now
+          Contact US
         </Button>
       </Box>
     </Box>

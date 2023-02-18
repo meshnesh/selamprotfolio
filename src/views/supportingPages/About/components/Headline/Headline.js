@@ -1,7 +1,7 @@
 import React from 'react';
 import { useTheme } from '@mui/material/styles';
 import Box from '@mui/material/Box';
-import Button from '@mui/material/Button';
+// import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 
 const Headline = () => {
@@ -57,7 +57,7 @@ const Headline = () => {
             development, launch and scale!
           </Typography>
         </Box>
-        <Box display="flex" justifyContent={'center'}>
+        {/* <Box display="flex" justifyContent={'center'}>
           <Box
             component={Button}
             variant="contained"
@@ -83,7 +83,7 @@ const Headline = () => {
           >
             Contact us
           </Box>
-        </Box>
+        </Box> */}
       </Box>
     </Box>
   );

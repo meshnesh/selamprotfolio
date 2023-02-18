@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Box from '@mui/material/Box';
-import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
 import { colors } from '@mui/material';
@@ -28,7 +27,7 @@ const Process = ({ themeMode = 'light' }) => {
           gutterBottom
           align={'center'}
         >
-          You do business we do the softwere
+          You do business we do the software
         </Box>
         <Typography
           variant={'h6'}
@@ -36,36 +35,8 @@ const Process = ({ themeMode = 'light' }) => {
           color={'textSecondary'}
           align={'center'}
         >
-          Since 2007, we have helped 25 companies launch over 1k incredible
-          products
+          With over 2.5 decades of combined experience, we offer the best advice on how to launch your products digitally
         </Typography>
-        <Box marginTop={3} display={'flex'} justifyContent={'center'}>
-          <Box
-            component={Button}
-            variant="contained"
-            color="primary"
-            size="large"
-            endIcon={
-              <svg
-                width={16}
-                height={16}
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M17 8l4 4m0 0l-4 4m4-4H3"
-                />
-              </svg>
-            }
-          >
-            Contact us
-          </Box>
-        </Box>
       </Box>
       <Grid container spacing={4}>
         {[
@@ -95,7 +66,7 @@ const Process = ({ themeMode = 'light' }) => {
           {
             title: 'Design',
             subtitle:
-              'We start by designing a mockup or prototype of your website, and present it to you. Once with the initial mockup, we start the revision process to perfect it.',
+              'We start by designing a mockup or prototype of your project, and present it to you. Once with the initial mockup, we start the revision process to perfect it.',
             icon: (
               <svg
                 width={40}
@@ -118,7 +89,7 @@ const Process = ({ themeMode = 'light' }) => {
           {
             title: 'Development',
             subtitle:
-              'We develop your website using the best practices and standards, so you have a perfectly responsive, lightning fast, SEO-friendly, and super scalable website.',
+              'We develop your project using the best practices and standards, so you have a perfectly responsive, lightning fast, SEO-friendly, and super scalable product.',
             icon: (
               <svg
                 width={40}
