@@ -1,1 +1,2 @@
-web: yarn start
+web: yarn global add serve
+web: serve -s build
