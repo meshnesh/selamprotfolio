@@ -17,8 +17,8 @@ export const useDarkMode = () => {
     setTheme(mode);
   };
 
-  const setThemePalette = (type = 'green') => {
-    const palette = palettes.indexOf(type) === -1 ? 'green' : type;
+  const setThemePalette = (type = 'blue') => {
+    const palette = palettes.indexOf(type) === -1 ? 'blue' : type;
     window.localStorage.setItem('themePalette', palette);
     setPalette(palette);
   };
@@ -31,7 +31,7 @@ export const useDarkMode = () => {
     const localTheme = window.localStorage.getItem('themeMode');
     localTheme ? setTheme(localTheme) : setMode('light');
     const localPalette = window.localStorage.getItem('themePalette');
-    localPalette ? setPalette(localPalette) : setThemePalette('green');
+    localPalette ? setPalette(localPalette) : setThemePalette('blue');
     setMountedComponent(true);
   }, []);
 

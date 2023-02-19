@@ -3,7 +3,7 @@ import { useTheme } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Container from 'common/Container';
 import { Footer, Hero, Highlights } from './components';
-import { About } from '../../supportingPages';
+import { About,Contact,   Services } from '../../supportingPages';
 
 const Home = () => {
   const theme = useTheme();
@@ -17,9 +17,6 @@ const Home = () => {
       <Container>
         <Highlights />
       </Container>
-      {/* <Container>
-        <Features />
-      </Container> */}
       <Box bgcolor={theme.palette.alternate.main}>
         <Container>
           <About />
@@ -27,6 +24,14 @@ const Home = () => {
       </Box>
       <Container>
         <Footer />
+      </Container>
+      <Box bgcolor={theme.palette.alternate.main}>
+        <Container>
+          <Services />
+        </Container>
+      </Box>
+      <Container>
+        <Contact />
       </Container>
     </Box>
   );

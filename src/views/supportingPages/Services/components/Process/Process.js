@@ -20,23 +20,6 @@ const Process = ({ themeMode = 'light' }) => {
         >
           What we do
         </Typography>
-        <Box
-          component={Typography}
-          fontWeight={700}
-          variant={'h3'}
-          gutterBottom
-          align={'center'}
-        >
-          You do business we do the software
-        </Box>
-        <Typography
-          variant={'h6'}
-          component={'p'}
-          color={'textSecondary'}
-          align={'center'}
-        >
-          With over 2.5 decades of combined experience, we offer the best advice on how to launch your products digitally
-        </Typography>
       </Box>
       <Grid container spacing={4}>
         {[

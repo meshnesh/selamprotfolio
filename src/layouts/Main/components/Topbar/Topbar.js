@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Box from '@mui/material/Box';
-import Link from '@mui/material/Link';
 import IconButton from '@mui/material/IconButton';
 import WebbeeLogo from 'svg/logos/Webbee';
 
@@ -14,8 +13,7 @@ const Topbar = ({
       display={'flex'}
       justifyContent={'space-between'}
       alignItems={'center'}
-      width={'100%'}
-    >
+      width={'100%'}>
       <Box display={'flex'} alignItems={'center'}>
         <Box
           display={'flex'}
@@ -23,10 +21,9 @@ const Topbar = ({
           component="a"
           underline="none"
           href="/"
-          title="webbee"
+          title="mwtechnologies"
           height={{ xs: 28, md: 32 }}
-          width={45}
-        >
+          width={45}>
           <WebbeeLogo height={'100%'} width={'100%'} /> {/* bring my own logo here  */}
         </Box>
       </Box>
@@ -71,32 +68,6 @@ const Topbar = ({
             )}
           </IconButton>
         </Box>
-        <Box sx={{ display: { xs: 'none', md: 'flex' } }} alignItems={'center'}>
-          <Box>
-            <Link underline="none" component="a" href="/" color="textPrimary">
-              Home
-            </Link>
-          </Box>
-          <Box marginX={2}>
-            <Link
-              underline="none"
-              component="a"
-              href="/page-services"
-              color="textPrimary"
-            >
-              Our Services
-            </Link>
-          </Box>
-          <Box>
-            <Link
-              underline="none"
-              component="a"
-              href="/page-hire-us"
-              color="textPrimary">
-              Hire Us
-            </Link>
-          </Box> 
-        </Box> 
       </Box>
     </Box>
   );

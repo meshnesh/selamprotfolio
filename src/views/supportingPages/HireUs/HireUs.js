@@ -23,8 +23,6 @@ const HireUs = () => {
       <Container maxWidth={800} paddingBottom={'0 !important'}>
         <Form />
       </Container>
-      <Container>
-      </Container>
     </Box>
   );
 };

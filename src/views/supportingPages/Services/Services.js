@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import Box from '@mui/material/Box';
 import Container from 'common/Container';
 import {
-  Contact,
   Hero,
   Process,
   WhatWeDo,
@@ -21,9 +20,6 @@ const Services = ({ themeMode = 'light' }) => {
       </Container>
       <Container>
         <Process themeMode={themeMode} />
-      </Container>
-      <Container>
-        <Contact />
       </Container>
     </Box>
   );
