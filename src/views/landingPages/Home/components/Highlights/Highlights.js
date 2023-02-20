@@ -14,7 +14,7 @@ const Highlights = () => {
           {
             title: 'Digitize your Products',
             subtitle:
-              'Digitising your business product is made easier. Variables, build tooling, documentation',
+              'Digitising your business products now made simpler. Variables, build tooling, development, documentation is made easier.',
             icon: (
               <svg
                 height={24}
@@ -36,7 +36,7 @@ const Highlights = () => {
           {
             title: 'Designed to be modern',
             subtitle:
-              'Designed with the latest design trends in mind. Webbee feels modern, minimal, and beautiful.',
+              'Designed with the latest design trends in mind. Our products feel modern, minimal, elegant and beautiful.',
             icon: (
               <svg
                 height={24}
