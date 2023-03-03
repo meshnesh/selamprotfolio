@@ -16,7 +16,7 @@ const Footer = () => (
         <Link
           underline="none"
           component="a"
-          href=" https://react-test-0vu1.onrender.com"
+          href="https://www.mwtechnologies.co"
           color="textPrimary"
           variant={'subtitle2'}> M&WTechnologies.ke 2023</Link>, SAAS. All rights reserved
         
