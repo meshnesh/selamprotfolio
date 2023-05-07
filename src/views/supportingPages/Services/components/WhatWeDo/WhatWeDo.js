@@ -20,8 +20,7 @@ const WhatWeDo = () => {
           }}
           gutterBottom
           color={'textSecondary'}
-          align={'center'}
-        >
+          align={'center'}>
           What we do
         </Typography>
         <Box
@@ -29,16 +28,14 @@ const WhatWeDo = () => {
           fontWeight={700}
           variant={'h3'}
           gutterBottom
-          align={'center'}
-        >
-          You do business we do the software
+          align={'center'}>
+          You do the business we do the software
         </Box>
         <Typography
           variant={'h6'}
           component={'p'}
           color={'textSecondary'}
-          align={'center'}
-        >
+          align={'center'}>
           With over 2.5 decades of combined experience, we offer the best advice on how to launch your products digitally
         </Typography>
       </Box>

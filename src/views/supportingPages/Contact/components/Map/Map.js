@@ -63,7 +63,7 @@ const Map = ({ themeMode = 'light' }) => {
           >
             Call us:
           </Typography>
-          <Typography variant={'subtitle1'}>+254 700 063 154</Typography>
+          <Typography variant={'subtitle1'}>+254 719 801 825</Typography>
         </Grid>
         <Grid item xs={12} sm={6}>
           <Typography

@@ -1,8 +1,8 @@
 {
-  "name": "mw-technologies-test",
+  "name": "mw-technologies",
   "author": "munene",
-  "email": "mr.antony.munene@gmail.com",
-  "version": "0.0.1",
+  "email": "mwtechnologieske@gmail.com",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "start": "react-scripts start",

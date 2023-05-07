@@ -16,9 +16,8 @@ const Process = ({ themeMode = 'light' }) => {
           }}
           gutterBottom
           color={'textSecondary'}
-          align={'center'}
-        >
-          What we do
+          align={'center'}>
+          Our Process
         </Typography>
       </Box>
       <Grid container spacing={4}>
