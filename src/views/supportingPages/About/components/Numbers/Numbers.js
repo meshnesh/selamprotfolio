@@ -10,7 +10,7 @@ const Numbers = () => {
         {[
           {
             title: 25,
-            subtitle: 'Over 25 years in combined expirience.',
+            subtitle: 'Over 25 years in combined experience.',
           },
           {
             title: '500',
