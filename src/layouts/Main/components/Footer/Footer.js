@@ -18,7 +18,7 @@ const Footer = () => (
           component="a"
           href="https://www.mwtechnologies.co"
           color="textPrimary"
-          variant={'subtitle2'}> M&WTechnologies.ke 2023</Link>, SAAS. All rights reserved
+          variant={'subtitle2'}> M&WTechnologies.ke 2024</Link>, SAAS. All rights reserved
         
       </Typography>
       <Typography
