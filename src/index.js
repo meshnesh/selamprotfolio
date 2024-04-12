@@ -14,7 +14,7 @@ root.render(<App />);
 reportWebVitals();
 
 const firebaseConfig = {
-  apiKey: 'AIzaSyBixReX8hsR6MM4a8srbXHke6Tu0u4X1qI',
+  apiKey: '',
   authDomain: 'mw-technologies.firebaseapp.com',
   projectId: 'mw-technologies',
   storageBucket: 'mw-technologies.appspot.com',
