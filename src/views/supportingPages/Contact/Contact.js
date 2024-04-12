@@ -1,21 +1,20 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { useTheme } from '@mui/material/styles';
-import useMediaQuery from '@mui/material/useMediaQuery';
+// import { useTheme } from '@mui/material/styles';
+// import useMediaQuery from '@mui/material/useMediaQuery';
 import Box from '@mui/material/Box';
-import Grid from '@mui/material/Grid';
-import { Map, Form } from './components';
+import { Form } from './components';
 import Container from 'common/Container';
 
-const Contact = ({ themeMode = 'light' }) => {
-  const theme = useTheme();
-  const isMd = useMediaQuery(theme.breakpoints.up('md'), {
-    defaultMatches: true,
-  });
+const Contact = () => {
+  // const theme = useTheme();
+  // const isMd = useMediaQuery(theme.breakpoints.up('md'), {
+  //   defaultMatches: true,
+  // });
 
   return (
     <Box>
-      <Container>
+      {/* <Container>
         <Grid container spacing={isMd ? 8 : 4}>
           <Grid item xs={12} md={6}>
             <Map themeMode={themeMode} />
@@ -24,6 +23,9 @@ const Contact = ({ themeMode = 'light' }) => {
             <Form />
           </Grid>
         </Grid>
+      </Container> */}
+      <Container maxWidth={800} paddingBottom={'0 !important'}>
+        <Form />
       </Container>
     </Box>
   );

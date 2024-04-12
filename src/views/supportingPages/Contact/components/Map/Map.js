@@ -15,8 +15,7 @@ const Map = ({ themeMode = 'light' }) => {
             fontWeight: 'medium',
           }}
           gutterBottom
-          color={'textSecondary'}
-        >
+          color={'textSecondary'}>
           Contact us
         </Typography>
         <Box marginBottom={2}>
@@ -24,8 +23,7 @@ const Map = ({ themeMode = 'light' }) => {
             variant="h2"
             sx={{
               fontWeight: 700,
-            }}
-          >
+            }}>
             Get in touch
           </Typography>
         </Box>

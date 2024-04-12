@@ -4,6 +4,10 @@ import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Avatar from '@mui/material/Avatar';
 import Grid from '@mui/material/Grid';
+import Image from 'mui-image';
+import feminine from '../../../../../assets/feminine.png';
+import photo from '../../../../../assets/photo.png';
+import missionary from '../../../../../assets/missionary.png';
 
 const Highlights = () => {
   const theme = useTheme();
@@ -12,69 +16,27 @@ const Highlights = () => {
       <Grid container spacing={2}>
         {[
           {
-            title: 'Digitize your Products',
+            title: 'Empowering Women Globally',
             subtitle:
-              'Digitising your business products now made simpler. Variables, build tooling, development, documentation is made easier.',
+              'Dedicated to uplifting and empowering women worldwide, I offer a range of services including public speaking engagements, career development consulting, and tailored empowerment strategies designed to help women achieve their fullest potential in all aspects of life.',
             icon: (
-              <svg
-                height={24}
-                width={24}
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M15 15l-2 5L9 9l11 4-5 2zm0 0l5 5M7.188 2.239l.777 2.897M5.136 7.965l-2.898-.777M13.95 4.05l-2.122 2.122m-5.657 5.656l-2.12 2.122"
-                />
-              </svg>
+              <Image src={feminine} width={'72%'} height={'72%'} />
             ),
           },
           {
-            title: 'Designed to be modern',
+            title: 'Capturing Moments, Creating Memories',
             subtitle:
-              'Designed with the latest design trends in mind. Our products feel modern, minimal, elegant and beautiful.',
+              'With an eye for detail and a passion for storytelling, I specialize in photography services that go beyond just capturing images. From special occasions to everyday moments, I strive to create timeless memories that will be cherished for years to come.',
             icon: (
-              <svg
-                height={24}
-                width={24}
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"
-                />
-              </svg>
+              <Image src={photo} width={'72%'} height={'72%'} />
             ),
           },
           {
-            title: 'Documentation for everything',
+            title: 'Make a Difference Through Missionary',
             subtitle:
-              'We\'ve written extensive documentation for components and products, so you never have to worry about anything.',
+              'Committed to making a positive impact, I am actively involved in missionary work that aims to bring hope, support, and resources to communities in need around the world. Through collaboration and compassion, we work to make a lasting difference in the lives of others.',
             icon: (
-              <svg
-                height={24}
-                width={24}
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"
-                />
-              </svg>
+              <Image src={missionary} width={'72%'} height={'72%'} />
             ),
           },
         ].map((item, i) => (
@@ -83,24 +45,21 @@ const Highlights = () => {
               <Box
                 display={'flex'}
                 flexDirection={'column'}
-                alignItems={'center'}
-              >
+                alignItems={'center'}>
                 <Box
                   component={Avatar}
                   width={60}
                   height={60}
                   marginBottom={2}
-                  bgcolor={alpha(theme.palette.primary.main, 0.1)}
-                  color={theme.palette.primary.main}
-                >
+                  bgcolor={alpha(theme.palette.primary.main, 0)}
+                  color={theme.palette.primary.main}>
                   {item.icon}
                 </Box>
                 <Typography
                   variant={'h6'}
                   gutterBottom
                   sx={{ fontWeight: 500 }}
-                  align={'center'}
-                >
+                  align={'center'}>
                   {item.title}
                 </Typography>
                 <Typography align={'center'} color="textSecondary">

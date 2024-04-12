@@ -1,5 +1,5 @@
 {
-  "name": "mw-technologies",
+  "name": "selam-portfolio",
   "author": "munene",
   "email": "mwtechnologieske@gmail.com",
   "version": "1.0.0",
@@ -40,6 +40,7 @@
     "firebase": "^9.17.2",
     "formik": "^2.2.6",
     "history": "^5.0.0",
+    "mui-image": "^1.0.7",
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-countup": "^6.2.0",

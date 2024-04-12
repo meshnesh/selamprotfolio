@@ -10,27 +10,25 @@ const Footer = () => (
         align={'center'}
         variant={'subtitle2'}
         color="textSecondary"
-        gutterBottom
-      >
-        &copy; All rights reserved
+        gutterBottom>
+        &copy; 2024
         <Link
           underline="none"
           component="a"
           href="https://www.mwtechnologies.co"
           color="textPrimary"
-          variant={'subtitle2'}> M&WTechnologies.ke 2024</Link>, SAAS. All rights reserved
+          variant={'subtitle2'}> SELAM KAIRU </Link>, ALL RIGHTS RESERVED
         
       </Typography>
-      <Typography
+      {/* <Typography
         align={'center'}
         variant={'caption'}
         color="textSecondary"
-        component={'p'}
-      >
+        component={'p'}>
         When you visit or interact with our sites, services or tools, we may use cookies for storing information to
         help provide you with a better, faster and safer experience and for
         marketing purposes.
-      </Typography>
+      </Typography> */}
     </Grid>
   </Grid>
 );

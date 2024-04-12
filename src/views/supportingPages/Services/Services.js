@@ -4,11 +4,11 @@ import Box from '@mui/material/Box';
 import Container from 'common/Container';
 import {
   // Hero,
-  Process,
+  // Process,
   WhatWeDo,
 } from './components';
 
-const Services = ({ themeMode = 'light' }) => {
+const Services = () => {
 
   return (
     <Box>
@@ -18,9 +18,9 @@ const Services = ({ themeMode = 'light' }) => {
       <Container>
         <WhatWeDo />
       </Container>
-      <Container>
+      {/* <Container>
         <Process themeMode={themeMode} />
-      </Container>
+      </Container> */}
     </Box>
   );
 };

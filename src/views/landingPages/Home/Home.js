@@ -2,8 +2,8 @@ import React from 'react';
 import { useTheme } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Container from 'common/Container';
-import { Footer, Hero, Highlights } from './components';
-import { About,Contact,   Services } from '../../supportingPages';
+import { Hero, Highlights, Gallery } from './components';
+import {Contact, Services, Travel } from '../../supportingPages';
 
 const Home = () => {
   const theme = useTheme();
@@ -19,15 +19,15 @@ const Home = () => {
       </Container>
       <Box bgcolor={theme.palette.alternate.main}>
         <Container>
-          <About />
+          <Travel />
         </Container>
       </Box>
       <Container>
-        <Footer />
+        <Services />
       </Container>
       <Box bgcolor={theme.palette.alternate.main}>
         <Container>
-          <Services />
+          <Gallery />
         </Container>
       </Box>
       <Container>
