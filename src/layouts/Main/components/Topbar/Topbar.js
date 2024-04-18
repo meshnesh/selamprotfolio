@@ -2,7 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Box from '@mui/material/Box';
 import IconButton from '@mui/material/IconButton';
-import WebbeeLogo from 'svg/logos/Webbee';
+// import WebbeeLogo from 'svg/logos/Webbee';
+import Image from 'mui-image';
+import logo from '../../../../assets/sk.png';
 
 const Topbar = ({
   themeMode,
@@ -21,10 +23,10 @@ const Topbar = ({
           component="a"
           underline="none"
           href="/"
-          title="mwtechnologies"
-          height={{ xs: 28, md: 32 }}
-          width={45}>
-          <WebbeeLogo height={'100%'} width={'100%'} /> {/* bring my own logo here  */}
+          title="selamkairu"
+          height={{ xs: 28, md: 88 }}
+          width={400}>
+          <Image src={logo} height={'100%'} width={'100%'} />
         </Box>
       </Box>
       <Box display="flex" alignItems={'center'}>

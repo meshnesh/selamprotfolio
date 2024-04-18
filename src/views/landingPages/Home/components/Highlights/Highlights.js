@@ -51,7 +51,7 @@ const Highlights = () => {
                   width={60}
                   height={60}
                   marginBottom={2}
-                  bgcolor={alpha(theme.palette.primary.main, 0)}
+                  bgcolor={alpha(theme.palette.primary.main, 0.01)}
                   color={theme.palette.primary.main}>
                   {item.icon}
                 </Box>
