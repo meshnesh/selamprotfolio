@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Box from '@mui/material/Box';
 import IconButton from '@mui/material/IconButton';
+import Link from '@mui/material/Link';
 // import WebbeeLogo from 'svg/logos/Webbee';
 import Image from 'mui-image';
 import logo from '../../../../assets/sk.png';
@@ -26,9 +27,10 @@ const Topbar = ({
           title="selamkairu"
           height={{ xs: 28, md: 88 }}
           width={400}>
-          <Image src={logo} height={'100%'} width={'100%'} />
+          <Image src={logo} height={'80%'} width={'80%'} />
         </Box>
       </Box>
+      
       <Box display="flex" alignItems={'center'}>
         <Box>
           <IconButton
@@ -69,6 +71,49 @@ const Topbar = ({
               </svg>
             )}
           </IconButton>
+        </Box>
+        <Box sx={{ display: { xs: 'none', md: 'flex' } }} alignItems={'center'}>
+          <Box>
+            <Link underline="none" component="a" href="/" color="textPrimary">
+              Home
+            </Link>
+          </Box>
+          <Box marginX={2}>
+            <Link
+              underline="none"
+              component="a"
+              href="/docs-introduction"
+              color="textPrimary">
+              About
+            </Link>
+          </Box>
+          <Box marginX={2}>
+            <Link
+              underline="none"
+              component="a"
+              href="/docs-introduction"
+              color="textPrimary">
+              Services
+            </Link>
+          </Box>
+          <Box marginX={2}>
+            <Link
+              underline="none"
+              component="a"
+              href="/docs-introduction"
+              color="textPrimary">
+              Photography
+            </Link>
+          </Box>
+          <Box marginX={2}>
+            <Link
+              underline="none"
+              component="a"
+              href="/docs-introduction"
+              color="textPrimary">
+              Podcast
+            </Link>
+          </Box>
         </Box>
       </Box>
     </Box>

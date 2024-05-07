@@ -1,135 +1,83 @@
-import React from 'react';
-import { useTheme } from '@mui/material/styles';
-import Box from '@mui/material/Box';
-import Typography from '@mui/material/Typography';
-import Grid from '@mui/material/Grid';
-import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
-import Button from '@mui/material/Button';
-import { colors } from '@mui/material';
+import React, { useEffect, useState } from 'react';
+// import Typography from '@mui/material/Typography';
+// import Grid from '@mui/material/Grid';
+// import Card from '@mui/material/Card';
+// import CardContent from '@mui/material/CardContent';
+import { Grid, Card, CardContent, Typography, CardMedia } from '@material-ui/core';
+// import { PlayCircleOutline as PlayCircleOutlineIcon } from '@material-ui/icons';
+// import axios from 'axios';
+// import Parser from 'rss-parser'; // Import RSS parser library
+// import React, { useEffect, useState } from 'react';
 
 const Schedules = () => {
-  const theme = useTheme();
+  
+  const [episodes, setEpisodes] = useState([]);
+
+  useEffect(() => {
+    const fetchEpisodes = async () => {
+      try {
+        const rssUrl = 'https://anchor.fm/s/4d8ca300/podcast/rss'; // Replace with your RSS feed URL
+        const response = await fetch(rssUrl);
+        const xmlText = await response.text();
+
+        // Parse the XML data to extract episode information
+        const parser = new DOMParser();
+        const xmlDoc = parser.parseFromString(xmlText, 'text/xml');
+        const items = xmlDoc.querySelectorAll('item');
+        const parsedEpisodes = Array.from(items).map(item => {
+          const title = item.querySelector('title').textContent;
+          const description = item.querySelector('description').textContent;
+          const audioUrl = item.querySelector('enclosure').getAttribute('url');
+          const imageUrl = Array.from(item.getElementsByTagNameNS('http://www.itunes.com/dtds/podcast-1.0.dtd', 'image'))
+            .map(image => image.getAttribute('href'))[0];
+          return { title, description, audioUrl, imageUrl };
+        });
+
+        // Update state with the parsed episodes
+        setEpisodes(parsedEpisodes);
+      } catch (error) {
+        console.error('Error fetching podcast episodes:', error);
+      }
+    };
+
+    fetchEpisodes();
+  }, []);
+
+  // const handlePlayAudio = (audioUrl) => {
+  //   const audioElement = new Audio(audioUrl);
+  //   audioElement.play();
+  // };
 
   return (
-    <Box>
-      <Box marginBottom={4}>
-        {/* <Typography
-          sx={{
-            textTransform: 'uppercase',
-            fontWeight: 'medium',
-          }}
-          gutterBottom
-          color={'secondary'}
-          align={'center'}
-        >
-          Agenda
-        </Typography> */}
-        <Box
-          component={Typography}
-          fontWeight={700}
-          variant={'h3'}
-          align={'center'}
-          gutterBottom
-          data-aos="fade-up"
-        >
-          Event Schedule
-        </Box>
-      </Box>
-      <Grid container spacing={2}>
-        {[
-          {
-            title: 'Kingdom Woman West',
-            subtitle:
-              'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pretium est ipsum dictum lectus mauris netus. Diam sed sit quisque facilisi luctus feugiat.',
-            date: 'March 11, 2024',
-            duration: '3 hrs',
-            tag: 'Ministries',
-          },
-          {
-            title: 'Kids Ministry',
-            subtitle:
-              'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pretium est ipsum dictum lectus mauris netus. Diam sed sit quisque facilisi luctus feugiat.',
-            date: 'Feb 13, 2024',
-            duration: '2 hrs',
-            tag: 'Ministries',
-          }
-        ].map((item, i) => (
-          <Grid item xs={12} key={i} data-aos={'fade-up'}>
-            <Box
-              component={Card}
-              display={'flex'}
-              flexDirection={{ xs: 'column', md: 'row' }}
-              variant={'outlined'}
-              sx={{
-                transition: 'all .2s ease-in-out',
-                '&:hover': {
-                  transform: `translateY(-${theme.spacing(1 / 2)})`,
-                },
-              }}>
-              <Box
-                minWidth={200}
-                minHeight={{ xs: 200, md: 'auto' }}
-                color={theme.palette.primary.dark}
-                bgcolor={`${theme.palette.primary.light}22`}
-                display={'flex'}
-                alignItems={'center'}
-                justifyContent={'center'}>
-                <svg
-                  width={64}
-                  height={64}
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor">
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z"
-                  />
-                </svg>
-              </Box>
-              <CardContent>
-                <Box
-                  display={'flex'}
-                  justifyContent={'space-between'}
-                  align={'center'}>
-                  <Box
-                    paddingX={1}
-                    color={theme.palette.common.white}
-                    bgcolor={colors.red[500]}
-                    borderRadius={1}>
-                    <Typography
-                      color={'inherit'}
-                      align={'center'}
-                      variant={'subtitle2'}>
-                      {item.tag}
-                    </Typography>
-                  </Box>
-                  <Box>
-                    <Typography variant={'subtitle2'}>
-                      {item.date} - {item.duration}
-                    </Typography>
-                  </Box>
-                </Box>
-                <Box marginTop={1}>
-                  <Typography variant={'h6'} gutterBottom>
-                    <Box fontWeight={600}>{item.title}</Box>
-                  </Typography>
-                  <Typography color="text.secondary">
-                    {item.subtitle}
-                  </Typography>
-                </Box>
-                <Box display={'flex'} justifyContent={'flex-end'}>
-                  <Button size={'large'}>Get ticket</Button>
-                </Box>
-              </CardContent>
-            </Box>
-          </Grid>
-        ))}
-      </Grid>
-    </Box>
+    <Grid container spacing={3}>
+      {episodes.map((episode, index) => (
+        <Grid item xs={12} sm={6} md={4} key={index}>
+          <Card style={{ display: 'flex', flexDirection: 'column', height: '100%' }}>
+            <CardMedia
+              component="img"
+              alt={episode.title}
+              height="140"
+              image={episode.imageUrl}
+              title={episode.title}
+            />
+            <CardContent style={{ flexGrow: 1 }}>
+              <Typography variant="h6" component="h2" gutterBottom>
+                {episode.title}
+              </Typography>
+              <Typography variant="body2" color="textSecondary" component="p" style={{ overflow: 'hidden', textOverflow: 'ellipsis', display: '-webkit-box', WebkitLineClamp: 2, WebkitBoxOrient: 'vertical' }}>
+                {episode.description}
+              </Typography>
+            </CardContent>
+            <CardContent>
+              <audio controls style={{ width: '100%' }}>
+                <source src={episode.audioUrl} type="audio/mpeg" />
+                Your browser does not support the audio element.
+              </audio>
+            </CardContent>
+          </Card>
+        </Grid>
+      ))}
+    </Grid>
   );
 };
 

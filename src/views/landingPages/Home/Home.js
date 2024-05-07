@@ -4,12 +4,21 @@ import Box from '@mui/material/Box';
 import Container from 'common/Container';
 import { Hero, Highlights, Gallery } from './components';
 import {Contact, Services, Travel } from '../../supportingPages';
+import SelamImage from '../../../assets/hero.png';
+
+const styles = {
+  gridContainer: {
+    backgroundImage: `url(${SelamImage})`,
+    backgroundSize: 'cover',
+    minHeight: 760
+  },
+};
 
 const Home = () => {
   const theme = useTheme();
   return (
     <Box>
-      <Box bgcolor={theme.palette.alternate.main} position={'relative'}>
+      <Box style={styles.gridContainer}>
         <Container position="relative" zIndex={2}>
           <Hero />
         </Container>
