@@ -30,7 +30,7 @@ const Topbar = () => {
   const handleMenuLeave = () => {
     setMenuCloseTimer(setTimeout(() => {
       setAnchorEl(null);
-    }, 200)); // Adjust delay as needed
+    }, 100)); // Adjust delay as needed
   };
 
   const open = Boolean(anchorEl);
@@ -42,22 +42,28 @@ const Topbar = () => {
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center', width: 250 }}>
       <List>
-        <ListItem button component="a" href="/">
+        <ListItem component="a" href="/">
           <ListItemText primary="Home" />
         </ListItem>
-        <ListItem button component="a" href="/page-about">
+        <ListItem component="a" href="/page-about">
           <ListItemText primary="About" />
         </ListItem>
-        <ListItem button component="a" href="/page-services">
-          <ListItemText primary="Services" />
+        <ListItem component="a" href="/page-family-success-coach">
+          <ListItemText primary="Missions" />
         </ListItem>
-        <ListItem button component="a" href="/page-family-success-coach">
-          <ListItemText primary="Family Success Coach" />
-        </ListItem>
-        <ListItem button component="a" href="/page-photography">
+        <ListItem component="a" href="/page-photography">
           <ListItemText primary="Photography" />
         </ListItem>
-        <ListItem button component="a" href="/page-podcasts">
+        <ListItem component="a" href="/page-photography">
+          <ListItemText primary="Women Empowerment" />
+        </ListItem>
+        <ListItem component="a" href="/page-photography">
+          <ListItemText primary="Family Success Coach" />
+        </ListItem>
+        <ListItem component="a" href="/page-photography">
+          <ListItemText primary="Career Guidance" />
+        </ListItem>
+        <ListItem component="a" href="/page-podcasts">
           <ListItemText primary="Podcast" />
         </ListItem>
       </List>
@@ -118,8 +124,19 @@ const Topbar = () => {
                   horizontal: 'left',
                 }}>
                 <MenuItem component="a" href="/page-family-success-coach">Family Success Coach</MenuItem>
-                <MenuItem component="a" href="/page-photography">Photography</MenuItem>
+                <MenuItem component="a" href="/page-photography">Women Empowerment</MenuItem>
+                <MenuItem component="a" href="/page-photography">Career Guidance</MenuItem>
               </Menu>
+            </Box>
+            <Box marginX={2}>
+              <Link underline="none" component="a" href="/page-services" color="black">
+                Missions
+              </Link>
+            </Box>
+            <Box marginX={2}>
+              <Link underline="none" component="a" href="/page-photography" color="black">
+                Photography
+              </Link>
             </Box>
             <Box marginX={2}>
               <Link underline="none" component="a" href="/page-podcasts" color="black">

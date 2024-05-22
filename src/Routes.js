@@ -25,6 +25,7 @@ import {
   MaintenanceMode as MaintenanceModeView,
   Cover as CoverView,
   NotFound as NotFoundView,
+  Photography as PhotographyView
 } from './views/supportingPages';
 
 const Routes = () => {
@@ -81,6 +82,17 @@ const Routes = () => {
           <WithLayout
             {...matchProps}
             component={PricingView}
+            layout={MainLayout}
+          />
+        ))()}
+      />
+      <Route
+        exact
+        path="/page-photography"
+        element={((matchProps) => (
+          <WithLayout
+            {...matchProps}
+            component={PhotographyView}
             layout={MainLayout}
           />
         ))()}
