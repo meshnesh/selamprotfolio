@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Box from '@mui/material/Box';
 // import Divider from '@mui/material/Divider';
 import Container from 'common/Container';
@@ -11,17 +12,12 @@ const About = () => {
       <Container>
         <Headline />
       </Container>
-      {/* <Container maxWidth={'800px !important'} paddingBottom={'0 !important'}>
-        <Numbers />
-        <Container>
-          <Divider />
-        </Container>
-      </Container>
-      <Container paddingY={'0 !important'}>
-        <Story />
-      </Container> */}
     </Box>
   );
+};
+
+About.propTypes = {
+  themeMode: PropTypes.string.isRequired,
 };
 
 export default About;
