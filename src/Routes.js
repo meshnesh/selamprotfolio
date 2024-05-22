@@ -54,7 +54,7 @@ const Routes = () => {
       />
       <Route
         exact
-        path="https://selamprotfolio.onrender.com/page-services"
+        path="/page-services"
         element={((matchProps) => (
           <WithLayout
             {...matchProps}
