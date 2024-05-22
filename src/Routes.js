@@ -25,7 +25,11 @@ import {
   MaintenanceMode as MaintenanceModeView,
   Cover as CoverView,
   NotFound as NotFoundView,
-  Photography as PhotographyView
+  Photography as PhotographyView,
+  Missions as MissionsView,
+  WomenEmpowerment as WomenEmpowermentView,
+  CareerGuidance as CareerGuidanceView,
+  FamilySuccessCoach as FamilySuccessCoachView,
 } from './views/supportingPages';
 
 const Routes = () => {
@@ -66,6 +70,39 @@ const Routes = () => {
       />
       <Route
         exact
+        path="/womenempowerment"
+        element={((matchProps) => (
+          <WithLayout
+            {...matchProps}
+            component={WomenEmpowermentView}
+            layout={MainLayout}
+          />
+        ))()}
+      />
+      <Route
+        exact
+        path="/careerguidance"
+        element={((matchProps) => (
+          <WithLayout
+            {...matchProps}
+            component={CareerGuidanceView}
+            layout={MainLayout}
+          />
+        ))()}
+      />
+      <Route
+        exact
+        path="/familysuccesscoach"
+        element={((matchProps) => (
+          <WithLayout
+            {...matchProps}
+            component={FamilySuccessCoachView}
+            layout={MainLayout}
+          />
+        ))()}
+      />
+      <Route
+        exact
         path="/page-contact"
         element={((matchProps) => (
           <WithLayout
@@ -93,6 +130,17 @@ const Routes = () => {
           <WithLayout
             {...matchProps}
             component={PhotographyView}
+            layout={MainLayout}
+          />
+        ))()}
+      />
+      <Route
+        exact
+        path="/page-missions"
+        element={((matchProps) => (
+          <WithLayout
+            {...matchProps}
+            component={MissionsView}
             layout={MainLayout}
           />
         ))()}

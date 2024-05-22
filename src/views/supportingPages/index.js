@@ -12,3 +12,7 @@ export { default as Cover } from './Cover';
 export { default as NotFound } from './NotFound';
 export { default as Travel } from './Travel';
 export { default as Photography } from './Photography';
+export { default as Missions } from './Missions';
+export { default as WomenEmpowerment } from './WomenEmpowerment';
+export { default as CareerGuidance } from './CareerGuidance';
+export { default as FamilySuccessCoach } from './FamilySuccessCoach';

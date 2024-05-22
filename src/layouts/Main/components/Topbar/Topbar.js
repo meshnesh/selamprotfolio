@@ -54,13 +54,13 @@ const Topbar = () => {
         <ListItem component="a" href="/page-photography">
           <ListItemText primary="Photography" />
         </ListItem>
-        <ListItem component="a" href="/page-photography">
+        <ListItem component="a" href="/womenempowerment">
           <ListItemText primary="Women Empowerment" />
         </ListItem>
-        <ListItem component="a" href="/page-photography">
+        <ListItem component="a" href="/familysuccesscoach">
           <ListItemText primary="Family Success Coach" />
         </ListItem>
-        <ListItem component="a" href="/page-photography">
+        <ListItem component="a" href="/careerguidance">
           <ListItemText primary="Career Guidance" />
         </ListItem>
         <ListItem component="a" href="/page-podcasts">
@@ -84,8 +84,8 @@ const Topbar = () => {
               href="/"
               title="selamkairu"
               height={{ xs: 28, md: 88 }}
-              width={100}>
-              <Image src={logo} height={'80%'} width={'80%'} />
+              width={160}>
+              <Image src={logo} height={'100%'} width={'80%'} />
             </Box>
           </Box>
           <Box sx={{ display: { xs: 'none', md: 'flex' }, alignItems: 'center', color: 'black' }}>
@@ -123,13 +123,13 @@ const Topbar = () => {
                   vertical: 'top',
                   horizontal: 'left',
                 }}>
-                <MenuItem component="a" href="/page-family-success-coach">Family Success Coach</MenuItem>
-                <MenuItem component="a" href="/page-photography">Women Empowerment</MenuItem>
-                <MenuItem component="a" href="/page-photography">Career Guidance</MenuItem>
+                <MenuItem component="a" href="/familysuccesscoach">Family Success Coach</MenuItem>
+                <MenuItem component="a" href="/womenempowerment">Women Empowerment</MenuItem>
+                <MenuItem component="a" href="/careerguidance">Career Guidance</MenuItem>
               </Menu>
             </Box>
             <Box marginX={2}>
-              <Link underline="none" component="a" href="/page-services" color="black">
+              <Link underline="none" component="a" href="/page-missions" color="black">
                 Missions
               </Link>
             </Box>
