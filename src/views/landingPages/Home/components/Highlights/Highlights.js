@@ -18,7 +18,7 @@ const Highlights = () => {
           {
             title: 'Empowering Women Globally',
             subtitle:
-              'Dedicated to uplifting and empowering women worldwide, I offer a range of services including public speaking engagements, career development consulting, and tailored empowerment strategies designed to help women achieve their fullest potential in all aspects of life.',
+              'Passionate about empowering women to prioritize self-care, discover purpose, and create joy-filled lives through personalized coaching and encouragement.',
             icon: (
               <Image src={feminine} width={'72%'} height={'72%'} />
             ),
@@ -26,7 +26,7 @@ const Highlights = () => {
           {
             title: 'Capturing Moments, Creating Memories',
             subtitle:
-              'With an eye for detail and a passion for storytelling, I specialize in photography services that go beyond just capturing images. From special occasions to everyday moments, I strive to create timeless memories that will be cherished for years to come.',
+              'Capturing Lifes Lessons Through the Lens: A Journey in Photography',
             icon: (
               <Image src={photo} width={'72%'} height={'72%'} />
             ),
@@ -34,7 +34,7 @@ const Highlights = () => {
           {
             title: 'Make a Difference Through Missionary',
             subtitle:
-              'Committed to making a positive impact, I am actively involved in missionary work that aims to bring hope, support, and resources to communities in need around the world. Through collaboration and compassion, we work to make a lasting difference in the lives of others.',
+              'Sharing Jesus love in public schools through gifts and stories, I empower children to find identity and hope in God.',
             icon: (
               <Image src={missionary} width={'72%'} height={'72%'} />
             ),

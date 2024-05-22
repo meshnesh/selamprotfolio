@@ -1,8 +1,9 @@
 import React from 'react';
 import Box from '@mui/material/Box';
-import Divider from '@mui/material/Divider';
+// import Divider from '@mui/material/Divider';
 import Container from 'common/Container';
-import { Headline, Numbers, Story } from './components';
+// import { Headline, Numbers, Story } from './components';
+import { Headline } from './components';
 
 const About = () => {
   return (
@@ -10,7 +11,7 @@ const About = () => {
       <Container>
         <Headline />
       </Container>
-      <Container maxWidth={'800px !important'} paddingBottom={'0 !important'}>
+      {/* <Container maxWidth={'800px !important'} paddingBottom={'0 !important'}>
         <Numbers />
         <Container>
           <Divider />
@@ -18,7 +19,7 @@ const About = () => {
       </Container>
       <Container paddingY={'0 !important'}>
         <Story />
-      </Container>
+      </Container> */}
     </Box>
   );
 };

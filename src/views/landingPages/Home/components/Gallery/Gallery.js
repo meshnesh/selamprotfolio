@@ -6,60 +6,45 @@ import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import CardMedia from '@mui/material/CardMedia';
 import Card from '@mui/material/Card';
-import Container from 'common/Container';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import Button from '@mui/material/Button';
-import { Schedules } from './component';
+import towers from '../../../../../assets/portfolio/DSC_0089.JPG';
+import jesus from '../../../../../assets/portfolio/DSC_0135.JPG';
+import river from '../../../../../assets/portfolio/DSC_0173.JPG';
+import elephant from '../../../../../assets/portfolio/DSC_0311.JPG';
+import flamingo from '../../../../../assets/portfolio/DSC_0423.JPG';
+import giraffe from '../../../../../assets/portfolio/DSC_1016.JPG';
+import bay from '../../../../../assets/portfolio/DSC_1066.JPG';
 
 const photos = [
   {
-    src: 'https://assets.maccarianagency.com/backgrounds/img13.jpg',
-    title: 'New York',
+    src: towers,
+    title: 'Towers',
   },
   {
-    src: 'https://assets.maccarianagency.com/backgrounds/img14.jpg',
-    title: 'Paris',
+    src: jesus,
+    title: 'Jesus',
   },
   {
-    src: 'https://assets.maccarianagency.com/backgrounds/img15.jpg',
-    title: 'Barcelona',
+    src: river,
+    title: 'River',
   },
   {
-    src: 'https://assets.maccarianagency.com/backgrounds/img16.jpg',
-    title: 'Prague',
+    src: elephant,
+    title: 'Elephant',
   },
   {
-    src: 'https://assets.maccarianagency.com/backgrounds/img17.jpg',
-    title: 'Milan',
+    src: flamingo,
+    title: 'Flaming0',
   },
   {
-    src: 'https://assets.maccarianagency.com/backgrounds/img18.jpg',
-    title: 'Yerevan',
+    src: giraffe,
+    title: 'Giraffe',
   },
   {
-    src: 'https://assets.maccarianagency.com/backgrounds/img13.jpg',
-    title: 'New York',
-  },
-  {
-    src: 'https://assets.maccarianagency.com/backgrounds/img14.jpg',
-    title: 'Paris',
-  },
-  {
-    src: 'https://assets.maccarianagency.com/backgrounds/img15.jpg',
-    title: 'Barcelona',
-  },
-  {
-    src: 'https://assets.maccarianagency.com/backgrounds/img16.jpg',
-    title: 'Prague',
-  },
-  {
-    src: 'https://assets.maccarianagency.com/backgrounds/img17.jpg',
-    title: 'Milan',
-  },
-  {
-    src: 'https://assets.maccarianagency.com/backgrounds/img18.jpg',
-    title: 'Yerevan',
-  },
+    src: bay,
+    title: 'Bay',
+  }
 ];
 
 const Gallery = () => {
@@ -117,38 +102,34 @@ const Gallery = () => {
   return (
     <Box>
       <Box marginBottom={4}>
-        {/* <Typography
+        <Typography
           sx={{
             textTransform: 'uppercase',
             fontWeight: 'medium',
           }}
           gutterBottom
           color={'secondary'}
-          align={'center'}
-        >
+          align={'center'}>
           Gallery
-        </Typography> */}
+        </Typography>
         <Box
           component={Typography}
           fontWeight={700}
           variant={'h3'}
           align={'center'}
-          data-aos={'fade-up'}
-        >
+          data-aos={'fade-up'}>
           My Portfolio
         </Box>
         <Box
           marginTop={2}
           display={'flex'}
           justifyContent={'center'}
-          data-aos="fade-up"
-        >
+          data-aos="fade-up">
           <Button
             color={'primary'}
             variant={'contained'}
             size={'large'}
-            onClick={() => openLightbox(0)}
-          >
+            onClick={() => openLightbox(0)}>
             View all
           </Button>
         </Box>
@@ -164,8 +145,7 @@ const Gallery = () => {
               onClick={() => openLightbox(i)}
               sx={{
                 cursor: 'pointer',
-              }}
-            >
+              }}>
               <CardMedia
                 image={item.src}
                 title={item.title}
@@ -194,9 +174,6 @@ const Gallery = () => {
           reactModalStyle={{ overlay: { zIndex: 1500 } }}
         />
       )}
-      <Container>
-        <Schedules />
-      </Container>
     </Box>
   );
 };

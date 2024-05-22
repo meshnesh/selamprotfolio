@@ -3,7 +3,7 @@ import { useTheme } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Container from 'common/Container';
 import { Hero, Highlights, Gallery } from './components';
-import {Contact, Services, Travel } from '../../supportingPages';
+import {Contact, Travel } from '../../supportingPages';
 import SelamImage from '../../../assets/hero.png';
 
 const styles = {
@@ -31,17 +31,19 @@ const Home = () => {
           <Travel />
         </Container>
       </Box>
-      <Container>
+      {/* <Container>
         <Services />
-      </Container>
-      <Box bgcolor={theme.palette.alternate.main}>
+      </Container> */}
+      <Box>
         <Container>
           <Gallery />
         </Container>
       </Box>
-      <Container>
-        <Contact />
-      </Container>
+      <Box bgcolor={theme.palette.alternate.main}>
+        <Container>
+          <Contact />
+        </Container>
+      </Box>
     </Box>
   );
 };

@@ -87,7 +87,7 @@ const Routes = () => {
       />
       <Route
         exact
-        path="/page-customers"
+        path="/page-podcasts"
         element={((matchProps) => (
           <WithLayout
             {...matchProps}

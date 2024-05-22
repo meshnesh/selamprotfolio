@@ -75,7 +75,7 @@ export const pages = [
       },
       {
         title: 'Customers',
-        href: '/page-customers',
+        href: '/page-podcasts',
       },
       {
         title: 'Hire Us',

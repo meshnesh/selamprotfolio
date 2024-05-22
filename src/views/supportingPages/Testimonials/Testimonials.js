@@ -62,7 +62,7 @@ const Testimonials = () => {
             variant={'h3'}
             gutterBottom
             align={'center'}>
-            Don&apos;t take word for it
+            Don&apos;t take my word for it
           </Box>
           <Typography
             variant={'h6'}
